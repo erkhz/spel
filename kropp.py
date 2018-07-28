@@ -1,4 +1,3 @@
-print("hejhej")
-print("detta skrivt från branch new-branch")
-print("hejdå")
-print("gitiihih")
+rad0 = [" ", " ", " "]
+rad1 = [" ", " ", " "]
+rad2 = [" ", " ", " "]
