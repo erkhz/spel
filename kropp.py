@@ -6,6 +6,8 @@ def spelplan(): #funktion för att skriva ut spelplanen
                 temp += "|"
             temp += plan[i][j]
         print(temp)
+        if i < 2:
+            print('-----')
 
 
 rad0 = [" ", " ", " "]
