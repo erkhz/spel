@@ -22,8 +22,12 @@ def spelaPlats(): #denna funktionen hämtar input och lägger till draget på br
             print("Den platsen är upptagen, försök igen spelare " + tur + "!")
         else:
             ok = False
-
     plan[r][k] = tur
+    vinst(r, k)
+
+def vinst(r, k):
+    vinst = False
+    
 
 
 
