@@ -6,6 +6,8 @@ def spelplan(): #funktion för att skriva ut spelplanen
                 temp += "|"
             temp += plan[i][j]
         print(temp)
+        if i < 2:
+            print('-----')
 
 def spelaPlats(): #denna funktionen hämtar input och lägger till draget på brädet
     print("Det är spelare " + tur + ":s tur.")
