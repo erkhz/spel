@@ -25,11 +25,9 @@ def spelaPlats(): #denna funktionen hämtar input och lägger till draget på br
         else:
             ok = False
     plan[r][k] = tur
-    vinst(r, k)
 
-def vinst(r, k):
-    vinst = False
-    
+
+
 
 
 
