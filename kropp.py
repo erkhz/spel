@@ -7,15 +7,7 @@ def spelplan(): #funktion för att skriva ut spelplanen
             temp += plan[i][j]
         print(temp)
 
-
-rad0 = [" ", " ", " "]
-rad1 = ["o", " ", " "]
-rad2 = [" ", " ", "x"]
-plan = [rad0, rad1, rad2]
-spelplan()
-tur = "x"
-
-while(True):
+def spelaPlats(): #denna funktionen hämtar input och lägger till draget på brädet
     print("Det är spelare " + tur + ":s tur.")
     ok = True
     while (ok):
@@ -30,8 +22,24 @@ while(True):
             print("Den platsen är upptagen, försök igen spelare " + tur + "!")
         else:
             ok = False
-
     plan[r][k] = tur
+    vinst(r, k)
+
+def vinst(r, k):
+    vinst = False
+    
+
+
+
+rad0 = [" ", " ", " "]
+rad1 = ["o", " ", " "]
+rad2 = [" ", " ", "x"]
+plan = [rad0, rad1, rad2]
+spelplan()
+tur = "x"
+
+while(True):
+    spelaPlats()
     spelplan()
 
     if(tur == "x"):
